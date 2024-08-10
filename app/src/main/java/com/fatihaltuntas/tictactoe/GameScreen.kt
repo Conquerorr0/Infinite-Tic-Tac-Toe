@@ -10,7 +10,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.transition.Visibility
 import com.fatihaltuntas.tictactoe.databinding.ActivityGameScreenBinding
 import java.util.LinkedList
 import java.util.Queue
@@ -112,7 +111,7 @@ class GameScreen : AppCompatActivity() {
 
         if (activePlayer == player1) {
             lastX?.let { removeImage(it) }
-            img.setImageResource(R.drawable.x_solid)
+            img.setImageResource(R.drawable.`x_solid`)
             player1Moves.add(img)
 
             if (player1Moves.size > 2) {

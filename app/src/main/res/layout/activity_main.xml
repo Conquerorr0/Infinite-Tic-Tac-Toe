@@ -9,96 +9,85 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="505dp"
-        android:layout_height="839dp"
+        android:layout_width="417dp"
+        android:layout_height="732dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu"
-        tools:srcCompat="@drawable/menu" />
-
-    <ImageView
-        android:id="@+id/img_0_2"
-        android:layout_width="317dp"
-        android:layout_height="271dp"
-
-        android:layout_marginTop="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu_text" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/menu_img"
+        tools:srcCompat="@drawable/menu_img" />
 
     <EditText
         android:id="@+id/txtPlayer1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="350dp"
         android:ems="10"
         android:inputType="text"
         android:text="Player 1"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="#DDEBF9"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/img_0_2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/img_0_2"
-        app:layout_constraintTop_toBottomOf="@+id/img_0_2" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txtPlayer2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
         android:ems="10"
         android:inputType="text"
         android:text="Player 2"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="#DDEBF9"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.632"
-        app:layout_constraintStart_toStartOf="@+id/txtPlayer1"
-        app:layout_constraintTop_toBottomOf="@+id/imgX" />
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPlayer1" />
 
     <Button
         android:id="@+id/btnStart"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="182dp"
         android:layout_height="70dp"
-        android:layout_marginTop="30dp"
-        android:backgroundTint="@color/material_dynamic_primary60"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#0367A6"
         android:onClick="startGame"
         android:text="START"
         android:textColor="@color/white"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPlayer2"
-        app:layout_constraintVertical_bias="0.305" />
+        app:layout_constraintTop_toBottomOf="@+id/txtPlayer2" />
 
     <ImageView
         android:id="@+id/imgX"
-        android:layout_width="52dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPlayer1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.381"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toEndOf="@+id/txtPlayer1"
-        app:layout_constraintTop_toBottomOf="@+id/img_0_2"
-        app:srcCompat="@drawable/x_solid" />
+        app:layout_constraintTop_toTopOf="@+id/txtPlayer1"
+        app:srcCompat="@drawable/x_solid"
+        tools:srcCompat="@drawable/x_solid" />
 
     <ImageView
         android:id="@+id/imgO"
-        android:layout_width="52dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPlayer2"
         app:layout_constraintEnd_toStartOf="@+id/txtPlayer2"
-        app:layout_constraintHorizontal_bias="0.618"
+        app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPlayer1"
+        app:layout_constraintTop_toTopOf="@+id/txtPlayer2"
         app:srcCompat="@drawable/o_solid"
         tools:srcCompat="@drawable/o_solid" />
 

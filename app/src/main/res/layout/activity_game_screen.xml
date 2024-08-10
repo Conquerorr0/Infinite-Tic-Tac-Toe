@@ -9,21 +9,22 @@
 
     <ImageView
         android:id="@+id/imgMenu"
-        android:layout_width="468dp"
-        android:layout_height="802dp"
+        android:layout_width="415dp"
+        android:layout_height="739dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.807"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.377"
-        app:srcCompat="@drawable/menu" />
+        app:srcCompat="@drawable/game_screen"
+        tools:srcCompat="@drawable/game_screen" />
 
     <TextView
         android:id="@+id/txtPlayer1Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
+        android:layout_marginStart="68dp"
         android:layout_marginTop="71dp"
         android:layout_marginBottom="70dp"
         android:text="Player1"
@@ -32,13 +33,14 @@
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgGrills" />
+        app:layout_constraintTop_toBottomOf="@+id/imgGrills"
+        app:layout_constraintVertical_bias="0.493" />
 
     <TextView
         android:id="@+id/txtPlayer2Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="55dp"
+        android:layout_marginEnd="68dp"
         android:text="Player2"
         android:textColor="@color/white"
         android:textSize="24sp"
@@ -51,9 +53,11 @@
         android:id="@+id/imgGrills"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="18dp"
         app:layout_constraintBottom_toBottomOf="@+id/gridLayout"
         app:layout_constraintEnd_toEndOf="@+id/gridLayout"
+        app:layout_constraintStart_toStartOf="@+id/gridLayout"
+        app:layout_constraintTop_toTopOf="@+id/gridLayout"
+        app:layout_constraintVertical_bias="0.25"
         app:srcCompat="@drawable/grids" />
 
     <androidx.gridlayout.widget.GridLayout
@@ -62,6 +66,7 @@
         android:layout_height="313dp"
         app:layout_constraintBottom_toBottomOf="@+id/imgMenu"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.439">
@@ -178,7 +183,8 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/imgGrills"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.76" />
 
     <ImageView
         android:id="@+id/imgPlayer1Crown"
@@ -188,6 +194,7 @@
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/txtPlayer1Name"
         app:layout_constraintEnd_toEndOf="@+id/txtPlayer1Name"
+        app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="@+id/txtPlayer1Name"
         app:layout_constraintTop_toBottomOf="@+id/gridLayout"
         app:srcCompat="@drawable/winner_crown" />
@@ -214,6 +221,6 @@
         app:layout_constraintStart_toEndOf="@+id/txtActivePlayer"
         app:layout_constraintTop_toTopOf="@+id/txtActivePlayer"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/x_solid" />
+        app:srcCompat="@drawable/x_solid_faint" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
