@@ -1,0 +1,24 @@
+<!-- res/layout/dialog_image.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/dialog_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:paddingTop="20dp"
+        android:text="Congratulations"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="24sp" />
+    <ImageView
+        android:id="@+id/dialog_image"
+        android:layout_width="62dp"
+        android:layout_height="52dp"
+        android:src="@drawable/winner_crown" />
+
+</LinearLayout>
